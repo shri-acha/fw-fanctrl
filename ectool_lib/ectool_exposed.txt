@@ -1,0 +1,15 @@
+open/close stuff
+ec_open()/ectool_init()
+ec_close()/ec_deinit()
+
+hardware controller functions
+-> fan-control:
+  ec_get_fan_speed()/ec_set_fan_speed(uint8_t)
+-> temperature:
+  ec_get_temperature()
+
+command interface
+ec_send_command(unit8_t,const uint8_t, size_t, uint8_t,size_t)
+
+register access i/o
+ec_read_reg(uint16_t,uint8_t)/ec_write_reg(uint16_t,uint8_t)
